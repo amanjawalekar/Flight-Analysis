@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Airline Delay Information</title>
+</head>
+<body>
+    <h1>Airline Delay Information</h1>
+    <table>
+        <tr>
+            <th>Delay</th>
+            <th>Predicted Delay</th>
+        </tr>
+        {% for i in range(airline_delay|length) %}
+        <tr>
+            <td>{{ airline_delay[i] }}</td>
+            <td>{{ predicted_delay[i] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
